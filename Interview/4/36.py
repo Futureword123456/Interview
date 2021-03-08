@@ -4,30 +4,16 @@
 # @Email : 2635681517@qq.com
 # @File : 36.pyi
 
-"""定义一个整型数组，并将指定个数的元素翻转到数组的尾部。
-
-例如：(ar[], d, n) 将长度为 n 的 数组 arr 的前面 d 个元素翻转到数组尾部。
-
-以下演示了将数组的前面两个元素放到数组后面。"""
-
-
-def leftRotate(arr, d, n):
-    for i in range(d):
-        leftRotatebyOne(arr, n)
-
-
-def leftRotatebyOne(arr, n):
-    temp = arr[0]
-    for i in range(n - 1):
-        arr[i] = arr[i + 1]
-    arr[n - 1] = temp
-
-
-def printArray(arr, size):
-    for i in range(size):
-        print("%d" % arr[i], end=" ")
-
-
+"""定义一个整型数组，并将指定个数的元素翻转到数组的尾部。"""
+n = int(input("输入数字:"))
 arr = [1, 2, 3, 4, 5, 6, 7]
-leftRotate(arr, 2, 7)
-printArray(arr, 7)
+# print(arr[0:n])
+list1 = arr[0:n]
+for i in range(1,n+1):
+    arr.pop(0)
+for j in list1:
+    arr.append(j)
+# print(arr)
+for i in arr:
+    print(i,end=" ")
+
