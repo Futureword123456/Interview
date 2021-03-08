@@ -37,3 +37,5 @@ import time
 #
 # sum = add(1, 3)
 # part = sub(23, 1)
+list1 = [1,5,3]
+print(sum(list1))
