@@ -13,6 +13,7 @@ print(list1[1:4])
 """包含左边不包含右边正索引从0开始，负索引从-1开始"""
 # 2、list 负数索引
 print(list1[-3])
+print(list1[1:-1])
 # 3.list 增加元素
 # 4.list 搜索
 # 5.list 删除元素
