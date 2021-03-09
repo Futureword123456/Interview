@@ -61,8 +61,26 @@ import time
 # arr = [1, 2, 3, 4, 5, 6, 7]
 # leftRotate(arr, 2, 7)
 # printArray(arr, 7)
-arr1 = []
-arr = [8, 2, 3, 4, 5, 6, 7]
-for i in arr:
-    arr1 = arr[:]
-print(arr)
+# arr1 = []
+# arr = [8, 2, 3, 4, 5, 6, 7]
+# for i in arr:
+#     arr1 = arr[:]
+# print(arr)
+
+# # print(list(str1))
+# str2 = ""
+# for i in range(1, len(str1) + 1):
+#     # print(i)
+#     if i != 2:
+#         str2 = str2 + str1[i - 1]
+# # print(str2)
+lst = []
+str1 = 'abcdefg'
+for i in range(1,len(str1)+1):
+    lst.append(i)
+lst.pop(2)
+print(lst)
+
+# print(str1[0:len(str1)])
+# print(len(str1))
+# print(str1.replace(str1,"1"))

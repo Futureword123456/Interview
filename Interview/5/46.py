@@ -5,7 +5,8 @@
 # @File : 46.py
 """Python 查找列表中最小元素"""
 
-# list1 = [1, 2, 3]
+list1 = [1, 2, 3]
+print(list1)
 # print(min(list1))
 
 
