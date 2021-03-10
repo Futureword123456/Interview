@@ -85,12 +85,14 @@ import time
 # print(len(str1))
 # print(str1.replace(str1,"1"))
 key_value = {2: 56, 1: 2, 5: 12, 4: 24, 6: 18, 3: 323}
-for i,j in key_value.items():
-    v = key_value[i]
-    print(i,j)
-
-for i in key_value:
-    """i是key"""
-    v = key_value[i]
-    """v是value"""
-    print(v)
+# for i,j in key_value.items():
+#     v = key_value[i]
+#     print(i,j)
+#
+# for i in key_value:
+#     """i是key"""
+#     v = key_value[i]
+#     """v是value"""
+#     print(v)
+"""key_value[5]是根据key来取到相应的value"""
+print(key_value[5])
