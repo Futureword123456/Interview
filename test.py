@@ -74,13 +74,23 @@ import time
 #     if i != 2:
 #         str2 = str2 + str1[i - 1]
 # # print(str2)
-lst = []
-str1 = 'abcdefg'
-for i in range(1,len(str1)+1):
-    lst.append(i)
-lst.pop(2)
-print(lst)
+# lst = []
+# str1 = 'abcdefg'
+# for i in range(1,len(str1)+1):
+#     lst.append(i)
+# lst.pop(2)
+# print(lst)
 
 # print(str1[0:len(str1)])
 # print(len(str1))
 # print(str1.replace(str1,"1"))
+key_value = {2: 56, 1: 2, 5: 12, 4: 24, 6: 18, 3: 323}
+for i,j in key_value.items():
+    v = key_value[i]
+    print(i,j)
+
+for i in key_value:
+    """i是key"""
+    v = key_value[i]
+    """v是value"""
+    print(v)
