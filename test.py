@@ -96,3 +96,7 @@ key_value = {2: 56, 1: 2, 5: 12, 4: 24, 6: 18, 3: 323}
 #     print(v)
 """key_value[5]是根据key来取到相应的value"""
 print(key_value[5])
+arr = [2, 3, 4, 5, 9, 6, 2, 10, 40]
+print(len(arr))
+for i in range(0,len(arr)):
+    print(i)
