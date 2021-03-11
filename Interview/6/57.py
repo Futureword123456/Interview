@@ -36,5 +36,6 @@ if __name__ == "__main__":
     result = binarySearch(arr, 1, len(arr), x)
     if result != -1:
         print(result)
+        print(arr[result])
     else:
         print("元素不在数组中")
