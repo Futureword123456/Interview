@@ -16,7 +16,7 @@ def Quick(arr, low, higt):
     i = low
     j = higt
     if low < higt:
-        key = arr[low]
+        key = arr[low] # 标志元素
         while i < j:
             while j > i and arr[j] >= key:
                 j = j - 1
