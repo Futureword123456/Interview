@@ -21,9 +21,13 @@ def insertion(arr):
     for i in range(1, len(arr)):
         key = arr[i]  # 待排序的数组
         j = i - 1
+        # arr[j]是已经排好序的那一小部分
         while j >= 0 and key < arr[j]:
+            # 向后移动一个位置给需要插入的数据
             arr[j + 1] = arr[j]
+            #
             j = j - 1
+            # 插入到合适的位置
         arr[j + 1] = key
 
 
