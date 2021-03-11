@@ -20,5 +20,3 @@ if num.isdigit():
 else:
     print(results[2])
 
-if __name__ == "__main__":
-    pass
