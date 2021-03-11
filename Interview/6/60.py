@@ -16,14 +16,17 @@ def Quick(arr, low, higt):
     i = low
     j = higt
     if low < higt:
-        key = arr[low] # 标志元素
+        key = arr[low]# 标志元素
         while i < j:
-            while j > i and arr[j] >= key:
+            """后面的值大于key就需要向前移动，否者就需要交换元素"""
+            while i < j and arr[j] >= key:
                 j = j - 1
             if i < j:
+                """后面的元素j和前面的i交换"""
                 arr[i] = arr[j]
+                """交换后前面的i就开始往后移动"""
                 i = i + 1
-
+            """前面的i小于后面的key"""
             while i < j and arr[i] < key:
                 i = i + 1
             if i < j:
