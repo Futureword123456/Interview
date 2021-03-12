@@ -95,8 +95,54 @@ key_value = {2: 56, 1: 2, 5: 12, 4: 24, 6: 18, 3: 323}
 #     """v是value"""
 #     print(v)
 """key_value[5]是根据key来取到相应的value"""
-print(key_value[5])
-arr = [2, 3, 4, 5, 9, 6, 2, 10, 40]
-print(len(arr))
-for i in range(0,len(arr)):
-    print(i)
+
+
+# print(key_value[5])
+# arr = [2, 3, 4, 5, 9, 6, 2, 10, 40]
+# print(len(arr))
+# for i in range(0, len(arr)):
+#     print(i)
+
+
+def Insertion(arr):
+    """插入排序"""
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i - 1
+        while j >= 0 and key < arr[j]:
+            arr[j + 1] = arr[j]
+            j = j - 1
+        arr[j + 1] = key
+
+
+lst = [5, 6, 8, 9, 4, 3, 1]
+Insertion(lst)
+print(lst)
+
+
+def QuickSort(arr, low, high):
+    i = low
+    j = high
+    if low < high:
+        temp = arr[low]
+        while i < j:
+            """arr[j]"""
+            while i < j and temp <= arr[j]:
+                j = j - 1
+            if i < j:
+                arr[i] = arr[j]
+                i = i + 1
+            while i < j and temp > arr[i]:
+                i = i + 1
+            if i < j:
+                arr[j] = arr[i]
+                j = j - 1
+            temp = arr[i]
+            QuickSort(arr, low, i - 1)
+            QuickSort(arr, i + 1, high)
+
+
+lst = [5, 6, 8, 9, 4, 3, 1]
+QuickSort(lst, 0, len(lst) - 1)
+print(111)
+print(lst)
