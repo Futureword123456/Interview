@@ -4,20 +4,19 @@
 # @Email : 2635681517@qq.com
 # @File : 65.py
 
-"""输入三个整数x,y,z，请把这三个数由小到大输出。"""
+"""输入三个整数x,y,z，请把这三个数中的最大值。"""
 
 
-def Sort(a, b):
-    d = 0
-    if a > b:
-        d = a
-    else:
-        d = b
-    return d
+def Max(a, b, c):
+    if b > a:
+        a = b
+    elif c > a:
+        a = c
+    return a
 
-
-for _ in range(0, 3):
-    x = int(input("输入三个数:"))
 
 if __name__ == "__main__":
-    pass
+    x1 = int(input("输入数:"))
+    x2 = int(input("输入数:"))
+    x3 = int(input("输入数:"))
+    print(Max(x1,x2,x3))
