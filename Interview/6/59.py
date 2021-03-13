@@ -32,7 +32,7 @@ def insertion(arr):
 
 
 if __name__ == "__main__":
-    lst = [5,8,9,6,2,4,8]
+    lst = [5,8,9,6,2,4,10]
     insertion(lst)
     print(lst)
     for i in lst:
